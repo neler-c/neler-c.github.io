@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="演示说明">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="欢迎访问我的博客">
 <title>404 Page not found</title>
 
 <link rel='canonical' href='https://neler-c.github.io/404.html'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="404 Page not found">
-<meta property='og:description' content="演示说明">
+<link rel="stylesheet" href="/scss/style.min.3f8bed736caae001aaff91893bae5a08b9dcc3404c842fde351a67c1a4592151.css"><meta property='og:title' content="404 Page not found">
+<meta property='og:description' content="欢迎访问我的博客">
 <meta property='og:url' content='https://neler-c.github.io/404.html'>
-<meta property='og:site_name' content='演示站点'>
+<meta property='og:site_name' content='zwt'>
 <meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-05-22T00:50:05&#43;08:00 '/>
 <meta name="twitter:title" content="404 Page not found">
-<meta name="twitter:description" content="演示说明">
+<meta name="twitter:description" content="欢迎访问我的博客">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
     </head>
     <body class="">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "light");
             }
         })();
     </script><script>
@@ -54,21 +56,19 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_f509edb42ecc0ebd.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                        <img src="/img/1_hu_4eed672355d6d2dc.png" width="300"
+                            height="292" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
                 </a>
-                
-                    <span class="emoji">🍥</span>
                 
             </figure>
             
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">演示站点</a></h1>
-            <h2 class="site-description">演示说明</h2>
+            <h1 class="site-name"><a href="/">zwt</a></h1>
+            <h2 class="site-description">欢迎访问我的博客</h2>
         </div>
     </header><ol class="menu-social">
             
@@ -170,7 +170,7 @@
 
 
                 
-                <span>Archives</span>
+                <span>归档</span>
             </a>
         </li>
         
@@ -189,13 +189,13 @@
 
 
                 
-                <span>Search</span>
+                <span>搜索</span>
             </a>
         </li>
         
         
         <li >
-            <a href='/links/' >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
                 
                 
                 
@@ -208,7 +208,7 @@
 
 
                 
-                <span>Links</span>
+                <span>友情链接</span>
             </a>
         </li>
         
@@ -283,12 +283,12 @@
     <section class="copyright">
         &copy; 
         
-            2020 - 
-        
-        2025 Example Person
+        2025 zwt
     </section>
     
     <section class="powerby">
+        
+            527907507 <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
@@ -312,6 +312,51 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://neler-c.github.io/icons/backTop.svg);
+    };
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
 </script>
 
     </body>

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on 演示站点</title>
+        <title>Posts on zwt</title>
         <link>https://neler-c.github.io/post/</link>
-        <description>Recent content in Posts on 演示站点</description>
+        <description>Recent content in Posts on zwt</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Example Person</copyright>
         <lastBuildDate>Thu, 22 May 2025 00:50:05 +0800</lastBuildDate><atom:link href="https://neler-c.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Helloworld</title>
         <link>https://neler-c.github.io/p/helloworld/</link>
         <pubDate>Thu, 22 May 2025 00:50:05 +0800</pubDate>
         
         <guid>https://neler-c.github.io/p/helloworld/</guid>
-        <description></description>
+        <description>&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;这是引用块，格式为 &amp;ldquo;&amp;gt; + [!NOTE] + 回车&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+</description>
         </item>
         <item>
         <title>Chinese Test</title>
